@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+    <div class=" container bg-light">
+        <form>
+            <h1 id="name" class="name"></h1>
+            <div class="col base">
+                <h4 >Age Calculator</h4>
+                <div class="block col-3">
+                    <p class="title">Day</p>
+                    <input type="text" name="data" id="data" placeholder="dd" minlength="1" maxlength="2" required>
+                </div>
+                <div class="block col-3 ">
+                    <p class="title">Month</p>
+                    <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2" required>
+                </div>
+                <div class="block col-3 ">
+                    <p class="title">Year</p>
+                    <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4" required>
+                </div>
+            </div>
+            <div class="base">
+                <input type="button" name="submit" value="submit" onclick="age()">
+            </div>
+            <div class="age" id="age"></div>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
